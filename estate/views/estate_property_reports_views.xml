@@ -1,0 +1,36 @@
+<odoo>
+    <record id="view_report_comercial_property_state_list" model="ir.ui.view">
+        <field name="name">report.comercial.property.state.list</field>
+        <field name="model">report.comercial.property.state</field>
+        <field name="arch" type="xml">
+            <list string="Report per Comercial i Estat de Propietat" create="false" delete="false" edit="false">
+                <field name="comercial" />
+                <field name="state" />
+                <field name="total_price" />
+            </list>
+        </field>
+    </record>
+
+    <record id="action_report_comercial_property_state" model="ir.actions.act_window">
+        <field name="name">Report per Comercial i Estat de Propietat</field>
+        <field name="res_model">report.comercial.property.state</field>
+        <field name="view_mode">list</field>
+    </record>
+
+    <record id="view_report_nombre_ofertes_per_propietat_list" model="ir.ui.view">
+        <field name="name">report.nombre.ofertes.propietat.list</field>
+        <field name="model">report.nombre.ofertes.propietat</field>
+        <field name="arch" type="xml">
+            <list string="Report ofertes per propietat" create="false" delete="false" edit="false">
+                <field name="name" />
+                <field name="nombre_ofertes" />
+            </list>
+        </field>
+    </record>
+
+    <record id="estate_property_report_nombre_ofertes_per_propietat_action" model="ir.actions.act_window">
+        <field name="name">Report ofertes per propietat</field>
+        <field name="res_model">report.nombre.ofertes.propietat</field>
+        <field name="view_mode">list</field>
+    </record>
+</odoo>
